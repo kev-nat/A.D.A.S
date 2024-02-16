@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/lavender_border">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/user_detail"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:text="@string/user_id"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/lavender_border"
+            android:gravity="start|center_vertical"
+            android:text="@string/count"
+            android:padding="16dp"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/good"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:text="OK!"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/warn"
+            android:layout_marginTop="10dp"
+             android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/ok"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/logout"
+            android:id="@+id/logout"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            app:cornerRadius = "20dp"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

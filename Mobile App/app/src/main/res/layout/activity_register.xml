@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".RegisterActivity">
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/click_to_register"
+        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/lavender_border"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/lavender"
+        android:textColorHint="@color/lavender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/lavender_border"
+        android:drawableStart="@drawable/ic_security"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/lavender"
+        android:textColorHint="@color/lavender"
+        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+
+    <TextView
+        android:id="@+id/loginNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@color/colorWhite"
+        android:text="@string/login_again"
+        android:textColor="@color/lavender"
+        app:layout_constraintEnd_toEndOf="@+id/btnRegister"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_login"
+        android:textColor="@color/colorSecondaryText"
+        app:layout_constraintBottom_toBottomOf="@+id/loginNow"
+        app:layout_constraintStart_toEndOf="@+id/loginNow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

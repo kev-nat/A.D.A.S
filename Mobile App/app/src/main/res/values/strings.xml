@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">A.D.A.S</string>
+    <string name="login">Welcome back!</string>
+    <string name="input_login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="make_password">Input Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_register">Click to register</string>
+    <string name="logout">Logout</string>
+    <string name="login_again">Already have an account?</string>
+    <string name="count">How Much?</string>
+    <string name="regis">Don\'t have an Account?</string>
+    <string name="Sign">SignUp</string>
+    <string name="user">User Login</string>
+    <string name="tester">Tester Login</string>
+    <string name="main">Automated Driving Assessment System</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="user_id">User Email</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
