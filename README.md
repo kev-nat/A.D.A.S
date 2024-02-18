@@ -1,4 +1,4 @@
-# A.D.A.S
+# A.D.A.S [Automated Driving Assessment System]🏎️
 <p align="justify"> A.D.A.S is an AI device that can analyze and detect reckless driving behavior in real time. It uses a MPU-6050 sensor that works with a Naïve Bayes classifier to track the vehicle’s speed. The device alerts the drivers when they exceed the speed limit or drive dangerously, and keeps track of the warnings in a mobile app that links to a Firebase database. </p>
 
 ### Background💡
