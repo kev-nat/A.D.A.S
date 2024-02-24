@@ -1,20 +1,21 @@
-from firebase import firebase
-firebase = firebase.FirebaseApplication('Your first database URL', None)
 import numpy as np
 import pandas as pd
+import firebase_admin
 import time
+
+from firebase import firebase
+firebase = firebase.FirebaseApplication('https://adas1-e4441-default-rtdb.asia-southeast1.firebasedatabase.app', None) # Database 1
 
 from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import StandardScaler
 from model import classifier
 
-import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-cred = credentials.Certificate('Your Database Credential.json')
+cred = credentials.Certificate('adas2-65e48-firebase-adminsdk-a29ay-a06deac1ff.json') # Database 2
 firebase_admin.initialize_app(cred, {
-        'databaseURL': 'Your second database URL'
+        'databaseURL': 'https://adas2-65e48-default-rtdb.asia-southeast1.firebasedatabase.app' 
         })
 
 i = 0
@@ -24,7 +25,7 @@ b = 199
 
 count = 0
 
-time.sleep(10) #70
+time.sleep(70)
     
 while i <=x:
     result = firebase.get('/X', None )

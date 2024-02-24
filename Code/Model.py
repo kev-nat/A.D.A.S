@@ -5,7 +5,6 @@ import sklearn
 dataset = pd.read_csv("datamodel.csv")
 X = dataset.iloc[:,1:200].values
 y = dataset.iloc[:, -1].values
-print(X)
 
 dataset.head()
 dataset.shape
@@ -13,9 +12,8 @@ from sklearn.preprocessing import LabelEncoder
 le = LabelEncoder()
 X[:,0] = le.fit_transform(X[:,0])
 
-#TRAIN TEST
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state = 0) #Train Test
 
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
